@@ -5,7 +5,7 @@ const path = require('path');
 const homeRoutes = require('./routes/home');
 const { nextTick } = require('process');
 
-const hostname = 'http://ec2-3-131-36-84.us-east-2.compute.amazonaws.com/';
+const hostname = '0.0.0.0';
 //const hostname = 'localhost';
 const port = 3000;
 
