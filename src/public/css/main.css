@@ -6,6 +6,7 @@
 
 body {
   padding: 0;
+  background: ghostwhite;
   margin: 0;
   font-family: Georgia, serif;
   font-size: 16px;
@@ -14,6 +15,18 @@ body {
   color: #000000;
   font-weight: normal;
   text-decoration: overline solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: lowercase;
+}
+
+.main-p {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
   font-style: normal;
   font-variant: normal;
   text-transform: lowercase;
@@ -29,6 +42,7 @@ main {
   height: 3.5rem;
   background-color: #64b5eb;
   padding: 0 1.5rem;
+  border-bottom: 2px solid black;
 }
 
 .main-header__nav {
@@ -42,11 +56,12 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
+
 }
 
 .main-header__item {
   margin: 0 1rem;
-  padding: 0;
+  padding: 10px;
 }
 
 .main-header__item a {
@@ -58,6 +73,7 @@ main {
 .main-header__item a:active,
 .main-header__item a.active {
   color: #ffeb3b;
+  
 }
 
 .grid {
