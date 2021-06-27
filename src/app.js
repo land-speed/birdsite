@@ -8,8 +8,8 @@ const fs = require('fs');
 const homeRoutes = require('./routes/home');
 const { nextTick } = require('process');
 
-var privateKey  = fs.readFileSync('./keys/ssl-key.pem', 'utf8');
-var certificate = fs.readFileSync('./keys/sslcert.crt', 'utf8');
+const privateKey  = fs.readFileSync('./keys/ssl-key.pem', 'utf8');
+const certificate = fs.readFileSync('./keys/sslcert.crt', 'utf8');
 
 var credentials = {key: privateKey, cert: certificate};
 
@@ -27,8 +27,8 @@ app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
-var httpServer = http.createServer(app);
-var httpsServer = https.createServer(credentials, app);
+//const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
 
-httpServer.listen(8080);
-httpsServer.listen(8443);
+//httpServer.listen(8080);
+httpsServer.listen(443);
