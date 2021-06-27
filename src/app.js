@@ -8,8 +8,8 @@ const fs = require('fs');
 const homeRoutes = require('./routes/home');
 const { nextTick } = require('process');
 
-var privateKey  = fs.readFileSync('../keys/ssl-key.pem', 'utf8');
-var certificate = fs.readFileSync('../keys/sslcert.crt', 'utf8');
+var privateKey  = fs.readFileSync('./keys/ssl-key.pem', 'utf8');
+var certificate = fs.readFileSync('./keys/sslcert.crt', 'utf8');
 
 var credentials = {key: privateKey, cert: certificate};
 
